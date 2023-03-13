@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Slab:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+// Header
+
+.logo {
+  color: rgb(40, 166, 189);
+}
+
+.brand {
+  font-family: "McLaren", cursive;
+  font-weight: 600;
+  transform: translateX(2%);
+  animation: scrolling 1s linear;
+  letter-spacing: 2px;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
+}
+
+.enroll {
+  background-color: rgb(40, 166, 189);
+  color: white;
+  &:hover {
+    background-color: rgb(38, 147, 167);
+    color: white;
+  }
+}
+
+
+// Add students
+
+.goback {
+    color: white;
+}
+
+.map iframe {
+  width: 100%;
+  height: 22rem;
+}
+
+
+.student-title{
+  background-color: rgb(40, 166, 189);;
+}
+
+// Edit student
+.update{
+  margin-left: 32rem;
+}
+
+
+//Students
+
+.heading{
+  letter-spacing: 2px;
+}
+
+
+
+//login
+.input-field{
+  width: 50vh;
+}
+
+.input{
+  height: 7vh;
+}
+
+.google-img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+
+//footer
+
+
+.footer {
+  background: rgba(226, 248, 248, 0.664);
+}
+
+
+.footer-media{
+  i{
+    color: black;
+    margin-left: 15px;
+  }
+}
+
+.footer-link{
+  li{
+    list-style-type: none;
+    
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  ul{
+    line-height: 40px;
+  }
+  i{
+    padding-right: 10px;
+  }
+}
+
+//Courses component
+.card-title{
+  color: rgb(40, 166, 189);
+}
+
+
+
+@media screen and (max-width: 460px) {
+  .footer{
+    text-align: center;
+  }
+
+  .footer-link{
+    ul{
+      padding-left: 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px ){
+  .footer{
+    text-align: center;
+  }
+}
