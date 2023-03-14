@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteStudent, loadStudents } from "../redux/action";
 import { useNavigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
+import { Card } from "../components/Card";
 
 export const Students = () => {
   let dispatch = useDispatch();
@@ -25,7 +26,6 @@ export const Students = () => {
     <>
       <Header />
 
-
       <div className="container-fluid student-title">
         <h1 className="text-center  rounded-pill text-light py-5">
           Data of enrolled students
@@ -34,13 +34,16 @@ export const Students = () => {
 
       <div className="container mt-5">
         <div className="row">
-      {students &&
-        students.map((student) => (
+          
+          <Card/>
+
+          {students &&
+            students.map((student) => (
               <div className="col-lg-4 col-md-6 mt-4" key={student.id}>
                 <div className="card">
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item text-center bg-dark text-light">
-                      <h4>Student {student.id}</h4>
+                      <h4>Student {student.id +2}</h4>
                     </li>
                     <li className="list-group-item">
                       <strong>Name: </strong> {student.name}
@@ -73,11 +76,10 @@ export const Students = () => {
                     Delete
                   </button>
                 </div>
-
               </div>
-        ))}
+            ))}
         </div>
-        </div>
+      </div>
 
       <Footer />
     </>
