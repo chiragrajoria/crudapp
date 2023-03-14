@@ -1,0 +1,39 @@
+{
+  "student": [
+    {
+      "name": "Chirag Rajoria",
+      "address": "Patiala",
+      "email": "chirag@gmail.com",
+      "contact": "7973797247",
+      "id": 1
+    },
+    {
+      "name": "Shubham",
+      "email": "shubham@gmail.com",
+      "contact": "7896541236",
+      "address": "Bihar",
+      "id": 2
+    },
+    {
+      "name": "ishan",
+      "email": "ishan@gmail.com",
+      "contact": "7412589635",
+      "address": "Near Khalsa college",
+      "id": 3
+    },
+    {
+      "name": "Anurag",
+      "email": "anurag@gmail.com",
+      "contact": "9852177635",
+      "address": "Bengal",
+      "id": 4
+    },
+    {
+      "name": "Priya",
+      "email": "angel@gamil.com",
+      "contact": "8521479638",
+      "address": "Nabha",
+      "id": 5
+    }
+  ]
+}
